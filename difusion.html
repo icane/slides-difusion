@@ -1,0 +1,1200 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Estrategias de difusión web de datos estadísticos en Cantabria</title>
+
+		<meta name="description" content="Estrategias de difusión web de datos estadísticos en Cantabria">
+		<meta name="author" content="Miguel Expósito Martín">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+		<!-- Github buttons -->
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link href='http://fonts.googleapis.com/css?family=Sofadi+One|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+<body>
+        <div class="reveal">
+                <div class="slides">
+			<section data-id="1">
+				<h1><span style="font-size: 70px">estrategias</span> <span style="font-size: 60px">de</span></h1>
+				<h1>difusión <span style="font-size: 70px">web</span> <span style="font-size: 60px">de</span></h1>
+				<h1>
+						<span style="font-weight:bold;font-size:90px">datos</span>
+
+						<span style="color: red;font-size:80px;">estadísticos</span></h1>
+
+
+					<h1><span style="font-size: 60px">en</span> Cantabria</h1>
+
+                        </section>
+			<section data-id="2">
+				<section data-id="2a">
+	<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+		datos tabulares 
+	</h2>
+
+	<div style="line-height: 1.5em; text-align: left;">
+		<img alt="Datos tabulares"  src="./img/tabla900.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); " />
+	</div>
+</section>
+<section data-id="2b">
+	<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+	arquitectura data	
+	</h2>
+	<div style="line-height: 1.5em; text-align: left;">
+		<img alt="Datos tabulares"  src="./img/data.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); " />
+	</div>
+
+
+</section>
+<section data-id="2c">
+	<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+	OLAP y estadística	
+	</h2>
+		<table style="font-size:20px">
+			<thead style="font-size:30px">
+			<tr class="headerSeparation">
+			 <th style="font-family: 'Open Sans'; color:#ff2c2d"
+>allí donde haya problemas...</th>
+			<th style="font-family: 'Open Sans'; color: darkblue">ponga yo solución</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rowSeparation">
+			<td class="fragment" data-fragment-index="1"><span style="font-weight:bold;font-size:30px"
+					>cruces</span> indiscriminados de datos</td>
+			<td class="fragment" data-fragment-index="1"><span style="font-weight:bold;font-size:30px">restricciones</span> en miembros calculados</td>
+		</tr>
+		<tr class="rowSeparation">
+					<td class="fragment" data-fragment-index="2">integración con <span style="font-weight:bold;font-size:30px">metadatos</span></td>
+					<td class="fragment" data-fragment-index="2"><span style="font-weight:bold;font-size:30px">microservicio</span> proveedor de metadatos</td>
+		</tr>
+		<tr class="rowSeparation">
+		<td class="fragment" data-fragment-index="3"><span style="font-weight:bold;font-size:30px">rendimiento </span>/ escalabilidad</td>
+		<td class="fragment" data-fragment-index="3"><span style="font-weight:bold;font-size:30px">caché</span>, balanceo de carga</td>
+		</tr>
+<tr>
+			<td class="fragment" data-fragment-index="4">valores no numéricos</td>
+			<td class="fragment" data-fragment-index="4">no aplica al sistema Mondrian</td>
+		</tr>
+		<tr class="rowSeparation">
+		<td class="fragment" data-fragment-index="5"><span style="font-weight:bold;font-size:30px">secreto</span> estadístico</td>
+		<td class="fragment" data-fragment-index="5">optimizador lineal y <span style="font-weight:bold;font-size:30px;">ocultación</span> de celdas</td>
+		</tr>
+		<tr class="rowSeparation">
+			<td class="fragment" data-fragment-index="6"><span style="font-weight:bold;font-size:30px">coste</span> y dependencia tecnológica</td>
+			<td class="fragment" data-fragment-index="6">servicio IT modesto + metodologías <span style="font-weight:bold;font-size:30px">ágiles</span></td>
+		</tr>
+		<tr class="rowSeparation">
+			<td class="fragment" data-fragment-index="7">poca <span style="font-weight:bold;font-size:30px">flexibilidad</span></td>
+			<td class="fragment" data-fragment-index="7">arquitectura <span style="font-weight:bold;font-size:30px">modular</span>: microservicios y plugins</td>
+		</tr>
+
+
+
+	</tbody>
+
+		</table>	
+<p class="fragment" data-fragment-index="7" style="font-size:20px; text-align:left; padding-top:0.8em"><a href="http://www.slideshare.net/algoya/estrategia-de-difusin-en-pcaxis">Familia PC-AXIS: Estrategia de difusión de información estadística</a>, <span style="font-weight: bold;">Alberto González Yanes</span></p>
+
+
+
+
+
+	</section>
+<section data-id="2d">
+	<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+	arquitectura difusión	
+	</h2>
+	<div style="line-height: 1.5em; text-align: left;">
+		<img alt="Datos tabulares"  src="./img/archweb.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); " />
+	</div>
+
+
+</section>
+
+</section>
+<section data-id="3">
+	<section data-id="3a">
+<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				formatos 
+			</h2>
+
+
+		<table style="font-size:30px">
+			<thead>
+			<tr>
+			<th></th>
+			<th>consumo</th>
+			<th>complejidad</th>
+			<th>popularidad</th>
+			<th>metadata</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><img alt="Icono xls"  src="./img/xls.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); width:64px; height:64px; vertical-align:middle;" /> 
+			</td>
+			<td>manual</td>
+			<td class="fragment highlight-green" data-fragment-index="1">baja</td>
+			<td class="fragment highlight-green" data-fragment-index="1">muy alta</td>
+			<td class="fragment highlight-red" data-fragment-index="1">baja</td>	
+		</tr>
+		<tr>
+			<td><img alt="Icono PC-Axis"  src="./img/pax.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); width:64px; height:64px; vertical-align:middle;" /> 
+			</td>
+			<td>manual/auto</td>
+			<td>media</td>
+			<td class="fragment highlight-green" data-fragment-index="1">alta</td>
+			<td class="fragment highlight-green" data-fragment-index="1">alta</td>	
+		</tr>
+<tr>
+			<td><img alt="Icono SDMX"  src="./img/sdmx.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); width:64px; height:64px; vertical-align:middle;" /> 
+			</td>
+			<td>auto</td>
+			<td class="fragment highlight-red" data-fragment-index="1">muy alta</td>
+			<td class="fragment highlight-red" data-fragment-index="1">muy baja</td>
+			<td class="fragment highlight-green" data-fragment-index="1">alta</td>	
+		</tr>
+<tr>
+			<td><img alt="Icono JSON"  src="./img/json.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); width:64px; height:64px; vertical-align:middle;" /> 
+		</td>
+			<td>auto</td>
+			<td class="fragment highlight-green" data-fragment-index="1">muy baja</td>
+			<td class="fragment highlight-green" data-fragment-index="1">muy alta</td>
+			<td>media</td>	
+		</tr>
+<tr>
+			<td><img alt="Icono RDF"  src="./img/rdf.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); width:64px; height:64px; vertical-align:middle;" /> 
+		</td>
+			<td>auto</td>
+			<td >media</td>
+			<td class="fragment highlight-red" data-fragment-index="1">baja</td>
+			<td class="fragment highlight-green" data-fragment-index="1">muy alta</td>	
+		</tr>
+
+	</tbody>
+
+		</table>	
+	</section>
+	<section data-id="3b">
+	<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+			interesante...	
+			</h2>
+	<div style="text-align: left; padding-top: 1em">
+				<ul>
+					<li class="fragment" style="padding: 0 0 0.5em 0.5em">
+					<a href="http://json-stat.org">JSON-stat</a>: 
+simple, empotrable, con toolboxes</li>	
+
+				<li  class="fragment" style="padding: 0 0 0.5em 0.5em"> 
+				<a href="http://json-ld.org">JSON-ld</a> linked data en JSON 	
+	</li>
+	<li class="fragment" style="padding: 0 0 0.5em 0.5em">
+<a href="http://csvlint.io">CSV</a> + validación JSON!! 
+	</li>
+</ul>
+</div>
+
+	
+	
+	
+	</section>
+	</section>
+	<section data-id="4">
+		<section data-id="4a">
+<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+	API restful metadata
+			</h2>
+		<div style="line-height: 1.5em; text-align: left; margin-top:70px;margin-bottom:80px">
+						<h3 style="text-align: center;">http://
+							<span class="fragment highlight-current-blue" data-fragment-index="1" >{host}</span> + /<span class="fragment highlight-current-blue" data-fragment-index="2">{app} </span>+ </h3>
+						<h3 style="text-align: center">
+							/<span class="fragment highlight-current-blue" data-fragment-index="3">{entity} </span>+ /<span class="fragment highlight-current-blue" data-fragment-index="4">{uri_tag} </span></h3>
+					</div>
+						<a href="http://www.icane.es/metadata/api/time-series/active-population-small-areas-employed-unemployed-base-2011">
+						<span style="text-align: center">
+							http://<span class="fragment highlight-current-blue" data-fragment-index="1">www.icane.es</span>/<span class="fragment highlight-current-blue" data-fragment-index="2">metadata/api</span>/</span>			
+						<span style="text-align: center;"><span class="fragment highlight-current-blue" data-fragment-index="3">time-series</span>/<span class="fragment highlight-current-blue" data-fragment-index="4">active-population-small-areas-employed-unemployed-base-2011</span></span>
+					</a>
+
+		</section>
+<section data-id="4b">
+<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+documentación	
+			</h2>
+
+			<div style="line-height: 1.5em; text-align: left;">
+				<a href="http://www.icane.es/metadata/"><img alt="Captura API metadatos"  src="./img/apimetadata.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);width:900px;height:460px; " /></a>
+			</div>
+		</section>
+
+			<section data-id="4c">
+<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+	API restful data
+		</h2>
+		<div style="line-height: 1.5em; text-align: left;margin-top:70px;margin-bottom:80px">
+						<h3 style="text-align: center;">http://
+							<span class="fragment highlight-current-blue" data-fragment-index="1" >{host}</span> + /<span class="fragment highlight-current-blue" data-fragment-index="2">{app} </span>+ </h3>
+						<h3 style="text-align: center">
+							/<span class="fragment highlight-current-blue" data-fragment-index="3">	{uri_tag} </span> + .<span class="fragment highlight-current-blue" data-fragment-index="4"> {ext} </span></h3>
+					</div>
+						<a href="http://www.icane.es/data/api/active-population-small-areas-employed-unemployed-base-2011.rdf">
+						<span style="text-align: center; margin-top:100px;">
+							http://<span class="fragment highlight-current-blue" data-fragment-index="1">www.icane.es</span>/<span class="fragment highlight-current-blue" data-fragment-index="2">data/api</span>/</span>			
+						<span style="text-align: center;"><span class="fragment highlight-current-blue" data-fragment-index="3">active-population-small-areas-employed-unemployed-base-2011</span>.<span class="fragment highlight-current-blue" data-fragment-index="4">rdf</span></span></a>
+
+
+
+		</section>
+	
+	</section>
+
+	
+	<section data-id="5">
+		<section data-id="5a">
+			<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+			web	<span style="color: red;">semántica</span> 	
+			</h2>
+		<div style="line-height: 1.5em; text-align: center;">
+				<img alt="La web semántica no se explica en una tarde"  src="./img/meme.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);" />
+			</div>
+
+		</section>
+		<section data-id="5a2">
+			<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				<a href="http://semstats2014.wordpress.com/">semstats</a>: ¿para qué?
+			</h2>
+		<div style="text-align: left">
+				<ul>
+	<li class="fragment" style="padding: 0 0 0.5em 0.5em">
+		mejorar <span style="font-weight:bold">acceso</span> y facilitar <span style="font-weight:bold">análisis</span> de datos estadísticos	
+		</li>	
+
+		<li  class="fragment" style="padding: 0 0 0.5em 0.5em"> 
+			datos bien descritos y <span style="font-weight:bold">contextualizados</span>
+
+	</li>
+	<li class="fragment" style="padding: 0 0 0.5em 0.5em">
+		nuevas <span style="font-weight:bold">asociaciones</span> entre conjuntos de datos
+	</li>
+		<li class="fragment" style="padding: 0 0 0.5em 0.5em">
+			facilidad para habilitar <span style="font-weight:bold">procesamiento automático</span> de recursos web
+</li>
+			
+</ul>
+</div>
+
+		
+		</section>
+		<section data-id="5b">
+			<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+			arquitectura	
+			</h2>
+		<div style="text-align: center; margin-top:-0.5em">
+				<img alt="Modelo web semántica"  src="./img/modelo_ws.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);" />
+			</div>
+			<p style="font-size:20px; text-align:left; margin-top: 0.2em"><a href="http://www.slideshare.net/AnaCarrillo3/retos-y-oportunidades-en-archivos-y-gestin-documental-ante-la-web-semntica-33821011">Retos y Oportunidades en Archivos y Gestión Documental ante la Web Semántica</a>, <span style="font-weight: bold;">Ana Carrillo Pozas</span></p>
+
+
+
+		</section>
+
+        	<section data-id="5c">
+			<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				XHTML + <span style="color: red;">RDFa</span> icane.es 
+			</h2>
+
+			<div style="line-height: 1.5em; text-align: left;">
+				<img alt="Grafo RDFa en icane.es"  src="./img/rdfa_legal_advisory.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);width:900px;height:460px; " />
+			</div>
+			<p style="font-size:20px; text-align:left; margin-top: 0.2em"><a href="http://rdfa.info/play/">RDFa play</a> con datos de <a href="http://www.icane.es/footer/legal-advisory">icane.es</a></p>
+
+
+
+		</section>
+		<section data-id="5d">
+			<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				modelo RDF	 
+			</h2>
+
+			<div style="line-height: 1.5em; text-align: left;">
+				<img alt="Modelo RDF en icane.es"  src="./img/rdf_model.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);width:900px;height:460px; " />
+			</div>
+			<p style="font-size:20px; text-align:left;"><a href="http://dcpapers.dublincore.org/pubs/article/viewFile/3681/1904">Implementation of a Linked Open Data solution for the Statistics Agency of Cantabria's metadata and data bank</a>, <span style="font-weight: bold;">Alejandro Villar Fernández</span></p>
+
+		</section>
+		<section data-id="5e">
+			<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				vocabulario icane
+			</h2>
+			<div style="line-height: 1.5em; text-align: left;">
+				<a href="http://www.icane.es/opendata/vocab"><img alt="Extracto de SKOS icane.es"  src="./img/vocab.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);width:900px;height:460px; " /></a>
+			</div>
+</section>
+		<section data-id="5f">
+			<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+			<span style="color: red;">linked</span> open data	
+			</h2>
+
+			<div style="line-height: 1.5em; text-align: left;">
+				<img alt="Entidades y relaciones en página de icane.es"  src="./img/rdfa_bis.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);width:900px;height:300px; " />
+			</div>
+			<p style="font-size:20px; text-align:left;"><a href="http://ubiquity-rdfa.googlecode.com/svn/trunk/install-checker.html">Ubiquity RDFa parser</a> aplicado a <a href="http://www.icane.es/population">http://www.icane.es/population/</a></p>
+
+		</section>
+		<section data-id="5g">
+		<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				enlazado : ¿qué?	
+			</h2>
+
+		
+		<table style="font-size:30px">
+			<thead>
+			<tr>
+			<th>entidad</th>
+			<th>#</th>
+			<th>propiedad</th>
+			<th># links</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="padding: 0 4em 0 0">Section</td>
+			<td style="padding: 0 4em 0 0">4</td>
+			<td style="padding: 0 4em 0 0">dcterms:subject</td>
+
+			<td>18</td>	
+		</tr>
+		<tr>
+			<td></td>	
+			<td></td>
+			<td>rdfs:seeAlso</td>
+			<td>1</td>	
+		
+		</tr>
+		<tr>
+			<td>Subsection</td>	
+			<td>27</td>	
+			<td>dcterms:subject</td>
+			<td>141</td>
+		</tr>
+		<tr>
+			<td></td>	
+			<td></td>
+			<td>rdfs:seeAlso</td>
+			<td>43</td>
+		
+		</tr>
+		<tr>
+			<td>Folder</td>	
+			<td>703</td>
+			<td>skos:closeMatch</td>
+			<td>161</td>
+		
+		</tr>
+		<tr>
+			<td></td>	
+			<td></td>
+			<td>rdfs:seeAlso</td>
+			<td>199</td>
+		</tr>
+		<tr>
+			<td>ReferenceArea</td>	
+			<td>6</td>
+			<td>owl:sameAs</td>
+			<td>10</td>
+
+		
+		</tr>
+		<tr>
+			<td></td>	
+			<td></td>
+			<td>rdfs:seeAlso</td>
+			<td>15</td>
+		
+		</tr>
+		<tr>
+			<td>Source</td>	
+			<td>2694</td>
+			<td>foaf:page</td>
+			<td>2472</td>
+		
+		</tr>
+
+
+	</tbody>
+
+</table>
+				<p style="font-size:20px; text-align:left; margin-top: 1em"><a href="http://dcpapers.dublincore.org/pubs/article/viewFile/3681/1904">Implementation of a Linked Open Data solution for the Statistics Agency of Cantabria's metadata and data bank</a>, <span style="font-weight: bold;">Alejandro Villar Fernández</span></p>
+
+		</section>
+<section data-id="5h">
+	<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+	enlazado: ¿con quién?	
+	</h2>
+		<table style="font-size:20px">
+			<thead style="font-size:30px">
+			<tr class="headerSeparation">
+			 <th style="font-family: 'Open Sans'"
+>Base de datos</th>
+			<th style="font-family: 'Open Sans'"># enlaces</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rowSeparation">
+			<td>Geonames</td>
+			<td>4</td>
+
+		</tr>
+		<tr class="rowSeparation">
+	<td>DBpedia</td>
+			<td>45</td>
+
+		</tr>
+		<tr class="rowSeparation">
+	<td>DBpedia española</td>
+			<td>47</td>
+
+		</tr>
+		<tr class="rowSeparation">
+	<td>INE</td>
+			<td>251 (no RDF)</td>
+
+		</tr>
+		<tr class="rowSeparation">
+	<td>Eurostat</td>
+			<td>22 (no RDF)</td>
+
+		</tr>
+		<tr class="rowSeparation">
+	<td>LEM para Bibliotecas Públicas</td>
+			<td>168</td>
+		</tr>
+<tr class="rowSeparation">
+	<td>LEM de la Biblioteca del Congreso de EEUU</td>
+			<td>151</td>
+		</tr>
+
+
+
+
+	</tbody>
+
+		</table>	
+
+		<p style="margin-top: 0.5em; text-align:left; font-size:30px">Y además... ICANE está en <a href="http://datahub.io/es/dataset/icane">the Datahub</a>  y <a href="http://www.programmableweb.com/api/icane-statistical">programmableweb</a></p>
+
+
+	</section>
+
+		<section data-id="5h">	
+			<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				punto SPARQL	
+			</h2>
+			<div style="line-height: 1.5em; text-align: left;">
+				<a href="http://www.icane.es/semantic-web"><img alt="Captura de punto SPARQL"  src="./img/sparql.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);width:900px;height:460px; " /></a>
+			</div>
+
+
+
+		</section>
+		<section data-id="5i">
+			<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				RDF <span style="color: red;">data cube	</span>
+			</h2>
+<table style="font-size:30px">
+	<tbody>
+		<tr>
+			<td style="padding-bottom:20px">cubo</td>
+			<td> RDF <span style="font-style: italic;">DataCube dataset</span></td>
+		</tr>
+		<tr>
+			<td style="padding-bottom:20px">dimensión</td>
+			<td><span style="font-style: italic;">Concept Scheme + Concept class + DimensionProperty</span></td>
+		</tr>
+		<tr>
+			<td style="padding-bottom:20px">
+		medida	
+	</td>	
+	<td>
+		RDF <span style="font-style: italic;">DataCube MeasureProperty</span>	
+
+	</td>
+</tr>
+<tr>
+	<td>
+celda	
+	</td>
+	<td>
+		RDF <span style="font-style: italic;">DataCube Observation</span> 
+
+	</td>
+</tr>
+
+	</tbody>
+
+		</table>	
+	<p style="font-size:20px; text-align:left; margin-top: 1em"><a href="http://www.w3.org/TR/vocab-data-cube/">Recomendación W3C RDF Data Cube Vocabulary</a></p>
+
+
+
+
+		</section>
+
+	<section data-id="5i2">
+			<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+			retos	
+			</h2>
+	<div style="text-align: left">
+		<ul>
+
+		<li class="fragment" data-fragment-index="1" style="padding: 0 0 0.5em 0.5em"> 
+			dificultad para <span style="font-weight:bold">comunicar propósito</span> y valor
+
+	</li>
+
+	<li class="fragment" data-fragment-index="2" style="padding: 0 0 0.5em 0.5em">
+		establecer <span style="font-weight:bold">vocabularios estadísticos</span> de uso común	
+		</li>	
+		<li class="fragment" data-fragment-index="3" style="padding: 0 0 0.5em 0.5em">
+
+			<span style="font-weight:bold">uniformizar</span> conceptualmente dimensiones en series estadísticas	
+		</li>
+	<li class="fragment" data-fragment-index="4"  style="padding: 0 0 0.5em 0.5em">
+		mantenimiento de los enlaces de datos
+	</li>
+		<li class="fragment" data-fragment-index="5"  style="padding: 0 0 0.5em 0.5em">
+		dificultad para usar datos enlazados externos y <span style="font-weight:bold">ser enlazado</span>
+</li>
+			
+</ul>
+</div>
+
+		
+		</section>
+
+                            
+                        </section>
+                        <section data-id="6">
+                         		<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+						datos <span style="color: red;">abiertos</span>	
+			</h2>
+			<blockquote cite="http://www.slideshare.net/ISTAC/open-data-fi2">
+				&ldquo;El opendata es el cuasi-estado de naturaleza de la difusión de estadísticas oficiales&rdquo;
+			</blockquote>
+			<p style="font-size:20px; text-align:left; margin-top: 1.5em"><a href="http://www.slideshare.net/ISTAC/open-data-fi2">Opendata en Canarias, la estadística como showcase</a>, <span style="font-weight: bold;">Alberto González Yanes</span></p>
+
+
+
+
+		</section>
+		<section data-id="7">
+ 		<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				¿qué falta?	
+			</h2>
+
+<div style="position:relative; line-height: 1.5em; text-align: center;">
+	<img alt="Arquitectura de difusión de datos en icane.es"  class="fragment current-visible" data-fragment-index="1" style="position:absolute;top:0px; z-index:0;" src="./img/opendata_arch.png" />
+<img alt="Arquitectura de difusión de datos en icane.es con catálogo"  style="z-index:1;" class="fragment" data-fragment-index="2" src="./img/opendata_arch2.png"  />
+	
+	</div>
+
+
+
+                            </section>
+                            <section data-id="8">
+	<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				marco normativo	
+			</h2>
+
+<div style="text-align: center;">
+	<img alt="Evolución marco legal RISP"  src="./img/marcolegal.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); " />
+</div>
+<p style="font-size:20px; text-align:left; margin-top: 0.5em"><a href="http://www.slideshare.net/EmilioGarciaGarcia/20130708-eoi-opendata-y-opengov">Opendata y Gobierno Abierto: La continuidad en una política pública</a>, <span style="font-weight: bold;">Emilio García García</span></p>
+
+
+                                </section>
+                                <section data-id="9">
+                                  	<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				objetivos	
+			</h2>
+			<div style="text-align: left">
+				<ul>
+	<li style="padding: 0 0 0.5em 0.5em">
+			ofrecer "escaparate" alternativo de datos	
+		</li>	
+
+		<li style="padding: 0 0 0.5em 0.5em"> 
+
+			complementar portal con catálogo <span style="font-weight: bold">NTI RISP</span>
+	</li>
+	<li style="padding: 0 0 0.5em 0.5em">
+incorporar API estándar	con función de búsqueda
+	</li>
+	<li style="padding: 0 0 0.5em 0.5em">
+cubrir carencias redes sociales	
+	</li>
+	<li style="padding: 0 0 0.5em 0.5em">
+ser referencia de datos abiertos en Cantabria	
+	</li>
+			
+</ul>
+</div>
+
+<p style="font-size:20px; text-align:left; margin-top: 1.5em"><a href="http://www.boe.es/diario_boe/txt.php?id=BOE-A-2013-2380">Norma Técnica de Interoperabilidad de Reutilización de recursos de la información</a> y su <a href="http://administracionelectronica.gob.es/pae_Home/dms/pae_Home/documentos/Estrategias/pae_Interoperabilidad_Inicio/Guia_de_aplicacion_de_la_Norma_Tecnica_de_Interoperabilidad_de_Reutilizacion_de_recursos_de_informacion/Guia_aplicacion_Reutilizacion_recursos_de_informacion.pdf">Guía de aplicación</a></p>
+
+
+
+
+                                        </section>
+                                        <section data-id="10">
+                                          	<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				requisitos	
+			</h2>
+			<h6 style="padding-bottom: 1em">
+				<span style="font-weight: bold">NTI RISP</span> y especialmente: 	
+			</h6>
+			<div style="text-align: left">
+				<ul>
+	<li style="padding: 0 0 0.5em 0.5em">
+			automatización de carga y actualización de datasets 	
+		</li>	
+
+		<li style="padding: 0 0 0.5em 0.5em"> 
+		mecanismos HTTP 303 y 410	
+	</li>
+	<li style="padding: 0 0 0.5em 0.5em">
+construcción de URIs	
+	</li>
+	<li style="padding: 0 0 0.5em 0.5em">
+previsualizadores	
+	</li>
+			
+</ul>
+</div>
+
+
+         
+                                                </section>
+						<section data-id="11">
+							<section data-id="11a">
+                                                 <h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				solución
+			</h2>
+			<table style="font-size:30px;margin: 0 auto;">
+				<tbody>
+					<tr class="fragment" data-fragment-index="1">
+						<td><a href="http://ckan.org"><img alt="Logotipo CKAN" src="./img/CKAN_Logo_full_color.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); height:80px; width:236px;" /></a>
+</td>	
+<td colspan="3" style="vertical-align:middle;"><h6><a href="http://data.gov.uk/">UK</a>, <a href="https://www.data.gov/">USA</a>, <a href="http://daten.berlin.de/">Berlin</a>, <a href="http://opendata.aragon.es/">Aragon</a></h6></td>
+					
+					</tr>
+
+		<tr>
+			<td class="fragment" data-fragment-index="2"><img alt="Icono búsqueda CKAN"  src="./img/search_ckan.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); vertical-align: middle" /> 
+			</td>
+			<td class="fragment" data-fragment-index="2" style="vertical-align: middle;">
+				<table> 
+					<tr>
+						<td>
+					búsqueda	
+						</td>	
+					</tr>	
+					<tr>
+						<td>
+					etiquetado	
+						</td>	
+					</tr>	
+					<tr>
+					
+						<td>navegación</td>	
+					</tr>
+				</table>
+				
+				</td>
+		<td class="fragment" data-fragment-index="3"><img alt="Icono almacenamiento CKAN"  src="./img/store-visualise_ckan.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" /> 
+			<td class="fragment" data-fragment-index="3" style="vertical-align: middle;">
+				<table>
+					<tr>
+						<td>
+					metadatos	
+						</td>	
+					
+					</tr>	
+					<tr>
+					
+						<td>visualización</td>	
+					</tr>
+				</table>	
+			
+			</td>	
+		</tr>
+		<tr>
+	<td class="fragment" data-fragment-index="4"><img alt="Icono federación de datos CKAN"  src="./img/engage_ckan.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); vertical-align:middle;" /> 
+	</td>
+	<td class="fragment" data-fragment-index="4" style="vertical-align: middle;">
+		<table>
+			<tr>
+				<td>
+				
+			federación	
+				</td>	
+			
+			</tr>	
+			<tr>
+				<td>
+			temas	
+				
+				</td>	
+			
+			</tr>
+			<tr>
+				<td>
+			RRSS	
+				
+				</td>	
+			
+			</tr>	
+		</table>	
+	
+	</td>
+	<td class="fragment" data-fragment-index="5"><img alt="Icono extensión CKAN"  src="./img/extend_ckan.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" /> 
+	</td>
+	<td class="fragment" data-fragment-index="5" style="vertical-align: middle;">
+		<table>
+			<tr>
+				<td>
+			API	
+				
+				</td>	
+			
+			</tr>	
+			<tr>
+				<td>
+			extensiones	
+				
+				</td>	
+			
+			</tr>
+		
+		</table>	
+	
+	</td>
+		
+
+		</tr>
+	
+	</tbody>
+
+		</table>	
+	
+
+							   </section> 
+							    <section data-id="11b">
+                         <h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+		tema ICANE	
+	</h2>
+	<img alt="Captura tema ICANE"  src="./img/theme.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" /> 
+	
+
+							    </section>
+
+													    <section data-id="11c">
+ <h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+		metadatos NTI RISP	
+	</h2>
+	<div style="text-align:center;line-height:0.8em">
+<table style="font-size:20px;margin: 0 auto;">
+			<thead>
+			<tr>
+			<th>CKAN</th>
+			<th>NTI RISP</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="padding: 0 10em 0 0">Descripción</td>
+			<td style="padding: 0 10em 0 0"><code>dct:description</code></td>
+		</tr>
+		<tr>
+			<td>Etiquetas</td>	
+			<td><code>dct:keyword</code></td>
+		</tr>
+		<tr>
+			<td>URL dataset</td>	
+			<td><code>dct:identifier, foaf:homepage</code></td>	
+		</tr>
+		<tr>
+			<td>Título</td>	
+			<td><code>rdfs:label, dct: title</code></td>
+		
+		</tr>
+		<tr>
+			<td>Fecha de creación</td>	
+			<td><code>dct:issued</code></td>
+		
+		</tr>
+		<tr>
+			<td>Fecha de modificación</td>	
+			<td><code>dct:modified</code></td>
+		</tr>
+		<tr>
+			<td>Extra 'accrualPeriodicity'</td>	
+			<td><code>dct:accrualPeriodicity</code></td>
+
+		
+		</tr>
+		<tr>
+			<td>Extra 'URI'</td>	
+			<td><code>dct:references</code></td>
+		
+		</tr>
+		<tr>
+			<td>Extra 'spatial'</td>	
+			<td><code>dct:spatial</code></td>
+		
+		</tr>
+	<tr>
+			<td>Recurso</td>	
+		<td><code>dct:distribution</code></td>
+
+		</tr>
+	<tr>
+			<td>Autor</td>	
+			<td><code>dct:creator</code></td>
+		
+		</tr>
+	<tr>
+			<td>Texto estático "es"</td>	
+			<td><code>dct:language </code></td>
+		
+		</tr>
+	<tr>
+			<td>Datos estáticos contacto</td>	
+			<td><code>dct:publisher</code></td>
+		
+		</tr>
+	<tr>
+			<td>URL licencia</td>	
+			<td><code>dct:license</code></td>
+		
+		</tr>
+
+
+	</tbody>
+
+		</table>	
+	</div>
+
+
+							    </section>
+							    <section data-id="11d">
+							    
+							     <h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+		esquema de URIs	
+	</h2>
+	<table style="font-size:22px;margin: 0 auto;">
+		<tbody>
+			<tr><td colspan="2" style="font-size:36px" >catálogo</td></tr>
+			<tr>
+				<td style="padding: 0 2em 0 0"><code>http://
+						<span class="fragment highlight-current-blue" data-fragment-index="1" >{base}</span>/catalogo </code></td></tr>
+			<tr>
+				<td style="padding: 0 2em 0 0"><a href="http://datos.icane.es/catalogo"><code>http://<span class="fragment highlight-current-blue" data-fragment-index="1" >datos.icane.es</span>/catalogo</code></a></td>
+			</tr>
+			<tr><td colspan="2" style="font-size:36px">conjunto de datos</td></tr>
+			<tr>
+				<td style="padding: 0 2em 0 0"><code>http://
+						<span class="fragment highlight-current-blue" data-fragment-index="1" >{base}</span>/catalogo/<span class="fragment highlight-current-blue" data-fragment-index="2">{dataset}</span> </code></td></tr>
+			<tr>
+				<td style="padding: 0 2em 0 0"><a href="http://datos.icane.es/catalogo/registro-establecimientos-industriales"><code>http://<span class="fragment highlight-current-blue" data-fragment-index="1" >datos.icane.es</span>/catalogo/<span class="fragment highlight-current-blue" data-fragment-index="2">registro-establecimientos-industriales</span></code></a></td>
+			</tr>
+			<tr><td colspan="2" style="font-size:36px">recurso</td></tr>
+			<tr>
+				<td style="padding: 0 2em 0 0"><code>http://
+						<span class="fragment highlight-current-blue" data-fragment-index="1" >{base}</span>/recurso/<span class="fragment highlight-current-blue" data-fragment-index="3">{sector}</span>/<span class="fragment highlight-current-blue" data-fragment-index="4">{dominio}</span>/<span class="fragment highlight-current-blue" data-fragment-index="5">{clase}</span>/<span class="fragment highlight-current-blue" data-fragment-index="6">{id}</span>.<span class="fragment highlight-current-blue" data-fragment-index="7">{ext}</span> </code></td></tr>
+			<tr>
+				<td style="padding: 0 2em 0 0"><a href="http://datos.icane.es/recurso/industria/registro-establecimientos-industriales/serie/inversion-industrial.rdf"><code>http://
+							<span class="fragment highlight-current-blue" data-fragment-index="1" >datos.icane.es</span>/recurso/<span class="fragment highlight-current-blue" data-fragment-index="3">industria</span>/<span class="fragment highlight-current-blue" data-fragment-index="4">registro-establecimientos-industriales</span>/<span class="fragment highlight-current-blue" data-fragment-index="5">serie</span>/<span class="fragment highlight-current-blue" data-fragment-index="6">inversion-industrial</span>.<span class="fragment highlight-current-blue" data-fragment-index="7">rdf</span> </code></a></td>
+
+			</tr>
+
+
+
+		</tbody>
+	</table>	
+
+
+
+							    </section>
+	    <section data-id="11e">
+			    <h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+		negociación + 303	
+	</h2>
+	<img alt="Captura consola ejemplo redirección 303"  src="./img/console_303.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" /> 
+				    
+							    
+</section>
+						    <section data-id="11f">
+                         <h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+		previsualizadores	
+	</h2>
+	<a href="http://datos.icane.es/recurso/industria/registro-establecimientos-industriales/serie/inversion-industrial.rdf"><img alt="Captura visualizador RDF"  src="./img/visualizador.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" /> </a>
+	
+
+							    </section>
+
+
+						    </section>
+						    <section data-id="12">
+							    <section data-id="12a">
+								    <h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+									    dataviz: <a href="http://www.icane.es/data/cpi-base-2011-coicop-general-group-index#timeseries">básica</a>	
+								    </h2>
+								    <img alt="Captura chart ICANE"  src="./img/googlechart.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" /> 
+								    <p><a href="https://developers.google.com/chart/?hl=es">Google Charts</a>: simple y con poco código </p>	
+							    </section>
+							    <section data-id="12b">
+								    <h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+									    dataviz: <a href="http://www.icane.es/data/municipal-register-annual-review-municipality#timeseries">mapas</a>	
+								    </h2>
+									    <img alt="Captura mapas ICANE"  src="./img/choromap.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" /> 
+								    <p><a href="http://raphaeljs.com/">Raphael.js</a>: estándar (SVG) y browser-compatible </p>	
+							    </section>
+ <section data-id="12c">
+								    <h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+									    dataviz: <a href="https://developers.google.com/chart/interactive/docs/gallery/geomap">Google Geomap</a>	
+								    </h2>
+								    <img alt="Captura mapamundi ICANE"  src="./img/mapamundi.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" /> 
+
+							    </section>
+
+
+							    </section>
+							    <section data-id="13">
+								    <section data-id="13a">
+                                          	<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				toolboxes	
+			</h2>
+	<div style="text-align: left">
+				<ul>
+					<li class="fragment" style="padding: 0 0 0.5em 0.5em">
+						Liberación de <a href="https://github.com/icane">cliente de metadatos en Github</a></li>	
+
+		<li  class="fragment" style="padding: 0 0 0.5em 0.5em"> 
+     Fomento e impulso de desarrollo Python, R, Javascript
+	</li>
+	<li class="fragment" style="padding: 0 0 0.5em 0.5em">
+		Desarrollo de ejemplos: <a href="http://nbviewer.ipython.org/">notebooks</a>, snippets, <a href="https://gist.github.com/">gists</a>
+	</li>
+</ul>
+</div>
+         
+                                                </section>
+	
+                                        <section data-id="13b">
+                                          	<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				SPAs 	
+			</h2>
+			<h5 >
+			APIs restful data y metadata 	
+		</h5>
+					<h5 >
+			+ 	
+			</h5>
+		<h5 >
+			<a href="http://www.w3.org/TR/html5/"><img alt="Logo HTML5"  src="./img/html5logo.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); vertical-align:middle;" /></a> 
+ + <a href="http://jquery.com/"><img alt="Logo JQuery"  src="./img/jquerylogo.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); vertical-align:middle;" /> 
+</a> + <a href="http://d3js.org/"><img alt="Logo D3.js"  src="./img/d3logo.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); vertical-align:middle;" /> 
+</a> 
+		</h5>
+		<h5>
+		= 	
+			</h5>
+		<h5>
+		Fichas municipales de Cantabria		
+			</h5>
+	</section>
+  <section data-id="13c">
+                                          	<h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+				Responsive Web Design 	
+			</h2>
+			<blockquote  cite="http://www.wired.com/2013/11/responsive-html5-apps-write-once-run-anywhere-where-is-anywhere/">
+				&ldquo;Write once, run everywhere&rdquo;
+			</blockquote>
+
+	<div style="text-align: left; padding-top: 1em">
+				<ul>
+					<li class="fragment" style="padding: 0 0 0.5em 0.5em">
+					Apps móviles <span style="color: red;">¿híbridas?</span> con <a href="http://www.w3.org/TR/html5/"><img alt="Logo HTML5"  src="./img/html5logo.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0); vertical-align:middle;" /></a> 
+: una app más</li>	
+
+				<li  class="fragment" style="padding: 0 0 0.5em 0.5em"> 
+				Ejemplo: <a href="http://apps.ft.com/android/index.html">Financial times </a>
+	</li>
+	<li class="fragment" style="padding: 0 0 0.5em 0.5em">
+		En estadística: gráficas y datos al vuelo
+	</li>
+</ul>
+</div>
+ 
+	</section>
+
+</section>
+		    <section data-id="14">
+							    <section data-id="14a">
+								    <h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+números: €
+								    </h2>
+		<table style="font-size:20px">
+			<thead style="font-size:30px">
+			<tr class="headerSeparation">
+			 <th style="font-family: 'Open Sans'"
+>Componente</th>
+			<th style="font-family: 'Open Sans'">€ aprox</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rowSeparation">
+			<td style="padding: 0 18em 0 0">API metadata</td>
+			<td style="padding: 0 18em 0 0">9000</td>
+
+		</tr>
+		<tr class="rowSeparation">
+				<td>API data</td>
+			<td>1000</td>
+
+		</tr>
+		<tr class="rowSeparation">
+	<td>linked open data</td>
+			<td>5750</td>
+
+		</tr>
+		<tr class="rowSeparation">
+	<td>exportación JSON</td>
+			<td>1500</td>
+
+		</tr>
+		<tr class="rowSeparation">
+	<td>portal opendata</td>
+			<td>5000</td>
+
+		</tr>
+		<tr class="rowSeparation">
+	<td>dataviz</td>
+			<td>4250</td>
+
+		</tr>
+	</tbody>
+
+		</table>	
+
+							    </section>
+							    <section data-id="14b">
+								    <h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+uso API data 
+								    </h2>
+
+	<img alt="Visitas API data"  src="./img/datapi_all_series_top_user.svg" style="max-width: 850px; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" /> 
+
+</section>
+<section data-id="14c">
+								    <h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+uso API metadata 
+								    </h2>
+
+	<img alt="Visitas API metadata"  src="./img/metapi_all_series_top_user.svg" style="max-width: 850px; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" /> 
+
+							    </section>
+						    <section data-id="14c">
+								    <h2 style="font-style: normal; font-variant: normal; font-weight: bold;">
+ API data por formato
+								    </h2>
+
+	<img alt="Visitas API data por formato"  src="./img/extensiones.svg" style="max-width: 850px; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" /> 
+
+</section>
+
+
+
+							    </section>
+
+						    <section data-id="15">
+							    <div>
+		<a href="http://www.icane.es"><img alt="Logotipo ICANE"  src="./img/logo500.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle;" /> 
+	</a>				    
+	<a href="http://www.cantabria.es"><img alt="Logotipo DGOT"  src="./img/informatica500.png" style="max-width: none; max-height: none; color: rgb(255, 153, 0);  vertical-align:middle; " /> </a>
+	<p style="font-size:20px; text-align:center; margin-top: 1em"><span style="font-weight: bold;"><a href="http://about.me/predicador37">Miguel Expósito Martín</a></span></p>
+	<p style="font-size:20px; text-align:center; margin-top: 1em">Jefe de Sección de Informática Estadística y Banco de Datos</p>
+	
+</div>	
+					    </section>
+						    					
+                                                                                    </div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+			<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme || 'simple', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+		<script>
+					if( !navigator.userAgent.match( /(iphone|android)/gi ) && !!document.querySelector ) {
+									document.querySelector( '.share-reveal' ).style.display = 'block';
+												document.querySelector( '.fork-reveal' ).style.display = 'block';
+														}
+												</script>
+
+											</div>
+	</body>
+</html>
