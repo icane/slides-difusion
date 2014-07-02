@@ -1,0 +1,66 @@
+<html> 
+  <head> 
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/> 
+    <!--Load the AJAX API--> 
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script> 
+    <script type="text/javascript"> 
+ 
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+ 
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawChart);
+function drawChart(){
+$.ajax({
+    type: 'Get',
+//building-census-type-size-municipality-number-property
+//census-1900-2001.google-json
+//private-housing-annual.google-json
+    url: 'http://www.icane.es/data/api/private-housing-annual.google-json',dataType: 'json'}).done(function(icaneSeries) {
+         
+        // Create the data table.
+        var data = new google.visualization.DataTable(icaneSeries.data);
+ 
+        // Set chart options
+        var options = {'title':'',
+                       'width':700,
+                       'height':500};
+ 
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+	
+	$.each(icaneSeries.metadata, function(i,metadata)
+{
+
+var html = '<tr><td>'+i+'</td>'+'<td>'+metadata.value+'</td></tr>';
+$('#table').append(html);
+
+
+});
+
+    }).fail(function(){
+	if (console && console.log) {
+	console.log("Error");
+	}
+	});
+	}
+
+
+    </script> 
+
+
+  </head> 
+ 
+  <body> 
+<!--Div that will hold the pie chart--> 
+    <div id="chart_div"></div> 
+<table id="table" border="1">
+<tr>
+<th>Metadato</th>
+<th>Valor</th>
+</tr>
+</table>
+  </body> 
+</html> 
