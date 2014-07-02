@@ -1,12 +1,9 @@
 slides-difusion
 ===============
-
 Presentación "Estrategias de Difusión Web de Datos Estadísticos en Cantabria"
-
 Motivación
 ----------
 Las presentes ponencia y presentación asociada se han elaborado con motivo de las XVIII Jornadas Estadísticas de las Comunidades Autónomas ([JECAS](http://jecas.es)). A través de ellas se pretende ofrecer una visión global de cuál ha sido y es en la actualidad la posición estratégica del Instituto Cántabro de Estadística en materia de difusión de datos estadísticos a través de la Web.
-
 Resumen
 -------
 En los tiempos de los grandes datos y los datos abiertos y enlazados, en los que la información bruta sin tratar es capaz de saturar la capacidad de síntesis humana, es de vital importancia para los organismos públicos responsables de la difusión de información ser capaces de potenciar la capacidad de comunicar resultados de manera clara y sencilla, así como de simplificar la complejidad de posibles y posteriores tratamientos automatizados.
@@ -17,11 +14,9 @@ Asimismo, se tratará de esbozar la dirección hacia la que apuntan las futuras 
 Ponencia
 --------
 La ponencia en PDF puede descargarse desde la [web oficial de las JECAS](http://jecas.es/descargap.html) o desde la carpeta /bin de este repositorio.
-
 Tecnología
 ----------
 Esta presentación se ha realizado en HTML5 utilizando el marco de trabajo [Reveval.js](https://github.com/hakimel/reveal.js/). Su código se aloja en [GitHub](https://github.com/icane/slides-difusion) y se sirve a través de [GitHub Pages](https://pages.github.com/). 
-
 Licencia
 --------
 Esta presentación está disponible al público bajo [licencia Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
