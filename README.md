@@ -16,7 +16,7 @@ Ponencia
 La ponencia en PDF puede descargarse desde la [web oficial de las JECAS](http://jecas.es/descargap.html) o desde la carpeta /bin de este repositorio.
 Tecnología
 ----------
-Esta presentación se ha realizado en HTML5 utilizando el marco de trabajo [Reveval.js](https://github.com/hakimel/reveal.js/). Su código se aloja en [GitHub](https://github.com/icane/slides-difusion) y se sirve a través de [GitHub Pages](https://pages.github.com/). 
+Esta presentación se ha realizado en HTML5 utilizando el marco de trabajo [Reveval.js](https://github.com/hakimel/reveal.js/). Su código se aloja en [GitHub](https://github.com/icane/slides-difusion) y se sirve a través de [GitHub Pages](http://icane.github.io/slides-difusion/). 
 Licencia
 --------
 Esta presentación está disponible al público bajo [licencia Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
